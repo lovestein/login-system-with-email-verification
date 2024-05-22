@@ -1,12 +1,12 @@
 <?php
 include ('../conn/conn.php');
 
-if (isset($_GET['user'])) {
-    $user = $_GET['user'];
+if (isset($_POST['delete'])) {
+    $tbl_user_id = $_POST['tbl_user_id'];
 
     try {
 
-        $query = "DELETE FROM `tbl_user` WHERE `tbl_user_id` = '$user'";
+        $query = "DELETE FROM `tbl_user` WHERE `tbl_user_id` = $tbl_user_id";
 
         $stmt = $conn->prepare($query);
 

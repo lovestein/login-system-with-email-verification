@@ -11,7 +11,6 @@ require 'PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(true);
 
 if (isset($_POST['register'])) {
-    print_r($_POST);
     try {
         $firstName = $_POST['first_name'];
         $lastName = $_POST['last_name'];
@@ -108,7 +107,7 @@ if (isset($_POST['verify'])) {
             echo "
             <script>
                 alert('Registered Successfully.');
-                window.location.href = 'http://localhost/login-system-with-email-verification/index.php';
+                window.location.href = 'http://localhost/login-system-with-email-verification/home.php';
             </script>
             ";
         } else {
