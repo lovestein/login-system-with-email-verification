@@ -23,11 +23,11 @@
                 <p class="text-center">Sign in to start your session</p>
                 <form action="./endpoint/login.php" method="POST">
                     <div class="form-group">
-                        <label class="fw-bold" for="username">Username</label>
+                        <label for="username"><strong>Username</strong></label>
                         <input type="text" name="username" id="username" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="password"><strong>Password</strong></label>
                         <input type="password" name="password" id="password" class="form-control">
                     </div>
                     <p>Don't have an account yet? Register <span class="switch-form-link" onclick="showRegistrationForm()">here.</span></p>
@@ -39,38 +39,38 @@
 
         <!-- Registration Form -->
         <div class="registration-form" id="registrationForm">
-            <h2 class="text-center">Sign up</h2>
+            <h2 class="text-center fw-bold">Sign up</h2>
             <p class="text-center">Fill in your personal details to register your account.</p>
 
 
             <form action="./endpoint/add-user.php" method="POST">
                 <div class="form-group registration row">
                     <div class="col-6">
-                        <label for="first_name">First Name</label>
+                        <label for="first_name"><strong>First Name</strong></label>
                         <input type="text" id="first_name" name="first_name" class="form-control">
                     </div>
                     <div class="col-6">
-                        <label for="last_name">Last Name</label>
+                        <label for="last_name"><strong>Last Name</strong></label>
                         <input type="text" id="last_name" name="last_name" class="form-control">
                     </div>
                 </div>
                 <div class="form-group registration row">
                     <div class="col-5">
-                        <label for="contact_number">Contact Number</label>
+                        <label for="contact_number"><strong>Contact Number</strong></label>
                         <input type="number" id="contact_number" name="contact_number" class="form-control" maxlength="11">
                     </div>
                     <div class="col-7">
-                        <label for="email">Email</label>
+                        <label for="email"><strong>Email</strong></label>
                         <input type="email" id="email" name="email" class="form-control">
                     </div>
                 </div>
                 <div class="form-group registration">
-                    <label for="username">Username</label>
+                    <label for="username"><strong>Username</strong></label>
                     <input type="text" id="username" name="username" class="form-control">
                 </div>
                 <div class="form-group registration">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" class="form-control">
+                    <label for="password"><strong>Password</strong></label>
+                    <input type="text" id="password" name="password" class="form-control">
                 </div>
                 <p>Already have an account? <span class="switch-form-link" onclick="showLoginForm()">Log in.</span></p>
                 <button type="submit" class="btn btn-dark login-register form-control" name="register">Register</button>
@@ -85,7 +85,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <!-- Functions -->
     <script src="main.js"></script>
 </body>
